@@ -11,5 +11,13 @@
 // };
 // let {a : f, b : g} = abc;
 // console.log("" + f + g);
-let a = '1';
-console.log(`${a}`)
+// let a = '1';
+// console.log(`${a}`)
+class test{
+    a = 1;
+    run(){
+        console.log(this.a);
+    }
+}
+let a = new test();
+a.run();

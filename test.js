@@ -5,9 +5,22 @@
 // };
 // displaycolor('red ${}', 'yellow','blue');
 // let a = 0
-var abc = {
-    a: 'a',
-    b: 'b'
-};
-var f = abc.a, g = abc.b;
-console.log("" + a + b);
+// let abc = {
+//     a : 'a',
+//     b : 'b'
+// };
+// let {a : f, b : g} = abc;
+// console.log("" + f + g);
+// let a = '1';
+// console.log(`${a}`)
+var test = /** @class */ (function () {
+    function test() {
+        this.a = 1;
+    }
+    test.prototype.run = function () {
+        console.log(this.a);
+    };
+    return test;
+}());
+var a = new test();
+a.run();
